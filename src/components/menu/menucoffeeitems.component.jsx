@@ -16,6 +16,7 @@ const CoffeeItems = styled.div`
   justify-content: center;
   align-content: center;
   background-color: rgb(36, 37, 43);
+  letter-spacing: 1.6px;
 `;
 const CoffeeItemsWapper = styled.div`
   width: 80%;

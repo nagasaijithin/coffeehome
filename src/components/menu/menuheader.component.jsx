@@ -7,6 +7,7 @@ const MenuHead = styled.div`
   background-image: url(${menuhero});
   width: 100%;
   height: 100vh;
+  letter-spacing: 1.6px;
 `;
 const CenterContent = styled.div`
   position: absolute;

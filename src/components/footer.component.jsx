@@ -66,7 +66,7 @@ const Footer = () => {
               <p>12PM - 02PM</p>
             </div>
             <div>
-              <Button path="/shop">VIEW THE MENU</Button>
+              <Button path="/menu">VIEW THE MENU</Button>
             </div>
           </FooterLeftGrid>
           <FooterLeftGridImg></FooterLeftGridImg>

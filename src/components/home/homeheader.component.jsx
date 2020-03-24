@@ -17,7 +17,6 @@ const HomeContinerHead = styled.div`
     url(${heroimg});
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 `;
 const Centercomp = styled.div`
   position: absolute;
