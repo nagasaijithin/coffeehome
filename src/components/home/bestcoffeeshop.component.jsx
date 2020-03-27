@@ -50,7 +50,7 @@ const Bestcoffeeshop = () => {
             sapiente quae beatae labore repellendus, maxime ipsum dolorem quasi,
             temporibus fuga provident accusantium!
           </p>
-          <Button path="/menu">ABOUT US</Button>
+          <Button path="/about">ABOUT US</Button>
         </div>
       </TbCscontentWapper>
       <TbCsGrid>

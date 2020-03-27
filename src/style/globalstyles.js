@@ -7,9 +7,7 @@ html{
   font-size:62.5%;
   scroll-behavior: smooth;
 }
-*,
-*:after,
-*:before{
+*{
   content:"";
   box-sizing: border-box;
   padding: 0;
