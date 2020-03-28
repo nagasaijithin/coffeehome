@@ -76,7 +76,9 @@ const Weserve = () => {
               Reiciendis sed tenetur inventore minus odio voluptatibus quam
               accusamus illo neque
             </p>
-            <Button color="black">BROWSE MENU</Button>
+            <Button path="/menu" color="black">
+              BROWSE MENU
+            </Button>
           </WeserveGridItemRight>
           <WeserveGridItemLeft>
             <WeserveGridItemLeftItemsImg></WeserveGridItemLeftItemsImg>
