@@ -5,7 +5,7 @@ import Button from "../button.component";
 
 const GreatCoffeeWapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
 `;
 const GtCGrid = styled.div`
   display: flex;

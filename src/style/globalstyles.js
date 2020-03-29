@@ -6,6 +6,13 @@ html{
   box-sizing: border-box;
   font-size:62.5%;
   scroll-behavior: smooth;
+  @media ${prop => prop.theme.mediLaptops}{
+    font-size:59.5%;
+  }
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    font-size: 50.5%;
+
+  }
 }
 *{
   content:"";

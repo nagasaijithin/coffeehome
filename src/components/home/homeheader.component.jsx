@@ -23,6 +23,7 @@ const Centercomp = styled.div`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 `;
 const HeroTitle = styled.div`
   color: white;
@@ -32,6 +33,9 @@ const HeroTitle = styled.div`
 const HeroMainTitle = styled.h2`
   font-size: 8rem;
   letter-spacing: 0.8rem;
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    font-size: 5rem;
+  }
 `;
 
 const Homeheader = () => {

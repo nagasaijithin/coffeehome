@@ -9,6 +9,9 @@ const WeserveWapper = styled.div`
   background-image: url(${greatcoffee});
   background-position: center;
   background-size: cover;
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    height: 150vh;
+  }
 `;
 const WeserveContiner = styled.div`
   width: 70%;
@@ -22,11 +25,17 @@ const WeserveGridWapper = styled.div`
   margin: 0 auto;
   align-items: center;
   justify-content: space-around;
-
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    flex-direction: column;
+  }
   & > div {
     width: 45%;
     height: 75%;
     background-color: white;
+    @media ${prop => prop.theme.medihomeheadertitlemin} {
+      height: 45%;
+      width: 55%;
+    }
   }
 `;
 const WeserveGridItemRight = styled.div`

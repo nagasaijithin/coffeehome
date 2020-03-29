@@ -17,6 +17,10 @@ const CoffeeItems = styled.div`
   align-content: center;
   background-color: rgb(36, 37, 43);
   letter-spacing: 1.6px;
+  @media ${prop => prop.theme.medifootermin} {
+    height: auto;
+    padding: 2rem;
+  }
 `;
 const CoffeeItemsWapper = styled.div`
   width: 80%;
@@ -32,11 +36,21 @@ const CoffeeItemsWapper = styled.div`
       font-size: 5rem;
     }
   }
+  & > div:nth-child(2) {
+    @media ${prop => prop.theme.medifootermin} {
+      display: flex;
+    }
+  }
 `;
 const CoffeInnerGrid = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 2rem;
+  @media ${prop => prop.theme.medifootermin} {
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
   & > div {
     width: 30%;
     text-align: center;
@@ -44,6 +58,9 @@ const CoffeInnerGrid = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    @media ${prop => prop.theme.medifootermin} {
+      width: 88%;
+    }
     & > img {
       width: 50%;
     }

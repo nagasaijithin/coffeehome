@@ -7,13 +7,20 @@ import person3 from "../../assets/person3.jpg";
 import styled from "styled-components";
 const Ourteam = styled.div`
   width: 100%;
-  height: 110vh;
+  height: 130vh;
   padding: 2rem;
+  @media ${prop => prop.theme.mediTablet} {
+    padding: 2rem;
+    height: auto;
+  }
 `;
 const OurteamContiner = styled.div`
   width: 75%;
   height: 100%;
   margin: 0 auto;
+  @media ${prop => prop.theme.mediTablet} {
+    width: 80%;
+  }
 `;
 const ContinerContent = styled.div`
   height: 100%;
@@ -24,10 +31,21 @@ const ContinerContent = styled.div`
   justify-content: space-around;
   font-size: 1.6rem;
   letter-spacing: 1.8px;
+  @media ${prop => prop.theme.mediTablet} {
+    & > div {
+      padding: 4rem 0;
+    }
+    & > div:nth-child(2) > div > div {
+      padding: 2rem;
+    }
+  }
 
   & > div:nth-child(1) {
     width: 60%;
     text-align: center;
+    @media ${prop => prop.theme.mediTablet} {
+      width: 90%;
+    }
     & > div {
       & > h2 {
         font-size: 4rem;
@@ -40,8 +58,13 @@ const ContinerContent = styled.div`
       width: 100%;
       display: flex;
       justify-content: space-around;
+      @media ${prop => prop.theme.mediTablet} {
+        flex-direction: column;
+        align-items: center;
+      }
+
       & > div > div > img {
-        width: 200px;
+        width: 20rem;
       }
     }
   }

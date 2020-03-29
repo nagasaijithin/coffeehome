@@ -14,11 +14,18 @@ import styled from "styled-components";
 const ShopgridWapper = styled.div`
   width: 100%;
   height: 150vh;
+  @media ${prop => prop.theme.medigrid} {
+    height: auto;
+    padding: 2rem;
+  }
 `;
 const ShopgridContiner = styled.div`
   width: 70%;
   height: 100%;
   margin: 0 auto;
+  @media ${prop => prop.theme.medigrid} {
+    width: 90%;
+  }
   & > div {
     height: 100%;
     display: grid;
@@ -29,6 +36,10 @@ const ShopgridContiner = styled.div`
     text-align: center;
     padding: 1rem;
     font-size: 1.3rem;
+    @media ${prop => prop.theme.medigrid} {
+      grid-template-columns: repeat(2, 150px);
+      grid-gap: 2rem;
+    }
     & > div {
       & > img {
         width: 100%;

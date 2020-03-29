@@ -12,12 +12,16 @@ const CakeWapper = styled.div`
   height: 90vh;
   background-color: rgb(36, 37, 43);
   color: white;
+  @media ${prop => prop.theme.medifootermin} {
+    height: auto;
+    padding: 2rem;
+  }
   & > div {
     height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     & > div {
       & > h2 {
         font-size: 4rem;
@@ -29,6 +33,10 @@ const CoffeInnerGrid = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 2rem;
+  @media ${prop => prop.theme.medifootermin} {
+    flex-direction: column;
+    align-items: center;
+  }
   & > div {
     width: 30%;
     text-align: center;
@@ -36,6 +44,10 @@ const CoffeInnerGrid = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    @media ${prop => prop.theme.medifootermin} {
+      width: 40%;
+      padding: 2rem 0;
+    }
     & > img {
       width: 50%;
       height: 60%;

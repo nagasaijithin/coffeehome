@@ -23,6 +23,9 @@ const CenterContent = styled.div`
   color: white;
   font-size: 2rem;
   letter-spacing: 1.8px;
+  @media ${prop => prop.theme.mediLaptops} {
+    width: 73%;
+  }
   & > div {
     font-size: 4rem;
   }

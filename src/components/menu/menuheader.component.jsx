@@ -16,6 +16,10 @@ const CenterContent = styled.div`
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 1.6rem;
+  @media ${prop => prop.theme.medifootermin} {
+    width: 90%;
+  }
+
   & > div {
     font-size: 5rem;
   }

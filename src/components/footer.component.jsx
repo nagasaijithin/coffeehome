@@ -18,13 +18,18 @@ const FooterLeftGrid = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 3rem;
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    padding: 1rem;
+  }
   & > div {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    @media ${prop => prop.theme.medihomeheadertitlemin} {
+      font-size: 1.7rem;
+    }
     & > h2 {
       font-size: 3rem;
     }
     & > h4 {
-      font-size: 2rem;
       color: #d29e66;
     }
   }
@@ -36,12 +41,20 @@ const FooterLeftGridImg = styled.div`
   width: 70%;
   position: relative;
   z-index: -1;
+  @media ${prop => prop.theme.medifootermin} {
+    display: none;
+  }
 `;
 const FooterLeftGridContent = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, black 60%, transparent);
+
+  @media ${prop => prop.theme.medifootermin} {
+    background-image: none;
+    background-color: black;
+  }
 `;
 const FooterLeftGridItemsWapper = styled.div`
   width: 100%;

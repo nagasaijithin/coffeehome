@@ -16,6 +16,9 @@ const FoodMenu = styled.div`
   background-size: cover;
   position: relative;
   letter-spacing: 1.6px;
+  @media ${prop => prop.theme.medifootermin} {
+    height: 130vh;
+  }
 `;
 const Centercontent = styled.div`
   position: absolute;

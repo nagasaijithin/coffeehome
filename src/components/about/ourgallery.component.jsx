@@ -10,6 +10,9 @@ import griditem1 from "../../assets/griditem1.jpg";
 const OurgalleryWapper = styled.div`
   width: 100%;
   height: 130vh;
+  @media ${prop => prop.theme.mediLaptops} {
+    height: auto;
+  }
 `;
 const OurgalleryContiner = styled.div`
   height: 100%;
@@ -20,6 +23,11 @@ const OurgalleryContiner = styled.div`
   justify-content: space-around;
   font-size: 1.6rem;
   letter-spacing: 1.8px;
+  @media ${prop => prop.theme.mediLaptops} {
+    & > div {
+      padding: 3rem 0;
+    }
+  }
 `;
 const OgcContent = styled.div`
   width: 68%;
@@ -36,6 +44,10 @@ const OgGridWapper = styled.div`
   grid-auto-rows: 200px;
   width: 70%;
   grid-gap: 2rem;
+  @media ${prop => prop.theme.mediTablet} {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, 200px);
+  }
 
   & > div {
     & > img {
@@ -45,10 +57,17 @@ const OgGridWapper = styled.div`
   }
   & > div:nth-child(1) {
     grid-row: span 2;
+    @media ${prop => prop.theme.mediTablet} {
+      grid-column: span 2;
+      grid-row: unset;
+    }
   }
 
   & > div:nth-child(4) {
     grid-column: 2;
+    @media ${prop => prop.theme.mediTablet} {
+      grid-column: unset;
+    }
   }
 `;
 const Ourgallery = () => {

@@ -9,12 +9,17 @@ import Button from "../button.component";
 import styled from "styled-components";
 const Simplecoffe = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: white;
   text-align: center;
 `;
 const Simplecoffegrid = styled.div`
   display: flex;
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 `;
 const SimplecoffeWapper = styled.div`
   display: flex;
@@ -32,16 +37,23 @@ const GirdItems = styled.div`
   align-items: center;
   font-size: 1.5rem;
   padding: 3rem;
+
   & > h4 {
     font-size: 1.7rem;
   }
   & > img {
     width: 53%;
+    @media ${prop => prop.theme.medihomeheadertitlemin} {
+      width: 29%;
+    }
   }
 `;
 const ContentWapper = styled.div`
   max-width: 59%;
   font-size: 1.3rem;
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    max-width: 80%;
+  }
   & > h2 {
     font-size: 3rem;
     letter-spacing: 3.8px;
@@ -49,49 +61,47 @@ const ContentWapper = styled.div`
 `;
 const Homesimplecoffee = () => {
   return (
-    <div>
-      <Simplecoffe>
-        <SimplecoffeWapper>
-          <ContentWapper>
-            <h2>WE BELIVE IN COFFEE THAT TASTES INCREDIBLE</h2>
+    <Simplecoffe>
+      <SimplecoffeWapper>
+        <ContentWapper>
+          <h2>WE BELIVE IN COFFEE THAT TASTES INCREDIBLE</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eque ipsa quae
+            ab illo.
+          </p>
+        </ContentWapper>
+        <Simplecoffegrid>
+          <GirdItems>
+            <img src={exp2} alt="" />
+            <h4>MOCHA LATTE</h4>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eque ipsa
-              quae ab illo.
+              accusantium doloremque laudantium
             </p>
-          </ContentWapper>
-          <Simplecoffegrid>
-            <GirdItems>
-              <img src={exp2} alt="" />
-              <h4>MOCHA LATTE</h4>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium
-              </p>
-            </GirdItems>
-            <GirdItems>
-              <img src={exp1} alt="" />
-              <h4>POUR OVER</h4>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium
-              </p>
-            </GirdItems>
-            <GirdItems>
-              <img src={exp3} alt="" />
-              <h4>ESPRESSO</h4>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium
-              </p>
-            </GirdItems>
-          </Simplecoffegrid>
-          <Button path="/menu" color="black" size="true">
-            FULL MENU
-          </Button>
-        </SimplecoffeWapper>
-      </Simplecoffe>
-    </div>
+          </GirdItems>
+          <GirdItems>
+            <img src={exp1} alt="" />
+            <h4>POUR OVER</h4>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </p>
+          </GirdItems>
+          <GirdItems>
+            <img src={exp3} alt="" />
+            <h4>ESPRESSO</h4>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium
+            </p>
+          </GirdItems>
+        </Simplecoffegrid>
+        <Button path="/menu" color="black" size="true">
+          FULL MENU
+        </Button>
+      </SimplecoffeWapper>
+    </Simplecoffe>
   );
 };
 

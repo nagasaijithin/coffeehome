@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 const TbCsWapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: white;
 `;
 const CenterContent = styled.div`
@@ -32,9 +32,13 @@ const WapperShowcaseTitle = styled.div`
 `;
 
 const WapperShowcaseContent = styled.div`
-  width: 90%;
+  width: auto;
   display: flex;
   margin: 0 auto;
+  @media ${prop => prop.theme.medihomeheadertitlemin} {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   & > div {
     padding: 2rem;
   }
