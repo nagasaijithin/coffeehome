@@ -22,6 +22,9 @@ const CenterContent = styled.div`
 
   & > div {
     font-size: 5rem;
+    @media ${prop => prop.theme.medimobileshort} {
+      font-size: 3rem;
+    }
   }
 `;
 const Menuheader = () => {

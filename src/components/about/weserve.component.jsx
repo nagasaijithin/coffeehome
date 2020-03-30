@@ -17,6 +17,9 @@ const WeserveContiner = styled.div`
   width: 70%;
   height: 100%;
   margin: 0 auto;
+  @media ${prop => prop.theme.medimobilemide} {
+    width: 90%;
+  }
 `;
 const WeserveGridWapper = styled.div`
   width: 100%;

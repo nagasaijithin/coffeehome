@@ -29,6 +29,9 @@ const Centercontent = styled.div`
   text-align: center;
   color: white;
   font-size: 1.8rem;
+  @media ${prop => prop.theme.medimobileLarg} {
+    width: 90%;
+  }
   & > div {
     font-size: 4rem;
   }

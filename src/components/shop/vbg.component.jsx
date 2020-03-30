@@ -6,6 +6,10 @@ const VbGwapper = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+  @media ${prop => prop.theme.medimobileLarg} {
+    height: auto;
+    flex-direction: column;
+  }
   & > div {
     width: 50%;
   }
@@ -18,6 +22,10 @@ const VbGwapper = styled.div`
     padding: 5rem;
     font-size: 1.6rem;
     letter-spacing: 1.8px;
+    @media ${prop => prop.theme.medimobileLarg} {
+      width: 100%;
+      padding: 3rem;
+    }
     & > div > h2 {
       font-size: 4rem;
     }
@@ -26,6 +34,9 @@ const VbGwapper = styled.div`
     background-image: url(${ourstory});
     background-position: center;
     background-size: cover;
+    @media ${prop => prop.theme.medimobileLarg} {
+      display: none;
+    }
   }
 `;
 const Vbg = () => {

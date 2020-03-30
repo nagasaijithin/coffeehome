@@ -10,6 +10,9 @@ const CenterContent = styled.div`
   width: 80%;
   height: 100%;
   margin: 0 auto;
+  @media ${prop => prop.theme.medimobilesmall} {
+    width: 100%;
+  }
 `;
 const WapperShowcase = styled.div`
   height: 100%;

@@ -40,6 +40,10 @@ const CoffeeItemsWapper = styled.div`
     @media ${prop => prop.theme.medifootermin} {
       display: flex;
     }
+    @media ${prop => prop.theme.medimobilemide} {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 `;
 const CoffeInnerGrid = styled.div`
@@ -50,6 +54,9 @@ const CoffeInnerGrid = styled.div`
     flex-direction: column;
     align-items: center;
     width: 50%;
+  }
+  @media ${prop => prop.theme.medimobilemide} {
+    width: 77%;
   }
   & > div {
     width: 30%;

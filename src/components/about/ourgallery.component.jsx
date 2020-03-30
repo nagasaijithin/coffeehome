@@ -48,6 +48,9 @@ const OgGridWapper = styled.div`
     grid-template-columns: repeat(2, minmax(150px, 1fr));
     grid-template-rows: repeat(3, 200px);
   }
+  @media ${prop => prop.theme.medimobilesmall} {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
 
   & > div {
     & > img {

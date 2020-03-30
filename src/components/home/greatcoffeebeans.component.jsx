@@ -11,6 +11,9 @@ const GtCGrid = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+  @media ${prop => prop.theme.medimobileLarg} {
+    flex-direction: column;
+  }
 `;
 const GtCGridContent = styled.div`
   width: 50%;
@@ -20,6 +23,10 @@ const GtCGridContent = styled.div`
   padding: 5rem;
   font-size: 1.7rem;
   letter-spacing: 1.8px;
+  @media ${prop => prop.theme.medimobileLarg} {
+    width: 100%;
+    padding: 3rem;
+  }
   & > h3 {
     font-size: 3.2rem;
   }
@@ -29,6 +36,9 @@ const GtCGridImg = styled.div`
   width: 50%;
   background-position: center;
   background-size: cover;
+  @media ${prop => prop.theme.medimobileLarg} {
+    display: none;
+  }
 `;
 const Greatcoffeebeans = () => {
   return (

@@ -11,8 +11,20 @@ html{
   }
   @media ${prop => prop.theme.medihomeheadertitlemin} {
     font-size: 50.5%;
-
   }
+  @media ${prop => prop.theme.medimobileLarg} {
+
+  font-size: 47.5%;
+  }
+  @media ${prop => prop.theme.medimobilesmall} {
+    font-size: 42.5%;
+  }
+  @media ${prop => prop.theme.medimobileshort} {
+    font-size:40.5%;
+  }
+  
+  
+
 }
 *{
   content:"";

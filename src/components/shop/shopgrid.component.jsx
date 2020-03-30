@@ -40,6 +40,9 @@ const ShopgridContiner = styled.div`
       grid-template-columns: repeat(2, 150px);
       grid-gap: 2rem;
     }
+    @media ${prop => prop.theme.medimobilesmall} {
+      grid-template-columns: 150px;
+    }
     & > div {
       & > img {
         width: 100%;
